@@ -1,0 +1,28 @@
+{% include "nav.html" %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="bg-white mr-1 px-4 py-5">
+        <h1 class="text-info">Summary: Latitude vs. {{ name }}</h1>
+        <hr />
+        <div class="pt-3">
+          <img src="../static/assets/images/Fig4.png" alt="Fig4" width="100%" />
+          <div>
+            <p class="lead text-black-50 large">
+              As expected, the weather becomes significantly warmer as one
+              approaches the equator(0 Deg. Latitude). More interestingly,
+              however, is the fact that the southern hemiphere tends to be
+              warmer this time of year than the northern hemisphere. This may be
+              due to the tilt of the earth at the time of the year this data was
+              gathered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "sidebar.html" %}
+  </div>
+</div>
+
+{% include "footer.html" %}

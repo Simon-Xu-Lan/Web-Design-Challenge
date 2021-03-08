@@ -1,0 +1,69 @@
+<div class="col-lg-4">
+  <div class="bg-white px-4 py-5">
+    <h2 class="text-info">Visulizations</h2>
+    <hr />
+    <div class="row">
+      {% if name == "Max Temperature" %}
+      <div class="col-lg-6 col-sm-3 border border-success">
+        {% else %}
+        <div class="col-lg-6 col-sm-3">
+          {% endif %}
+          <a href="/plots/max-temperature">
+            <img
+              src="../static/assets/images/Fig1.png"
+              alt="Fig1"
+              width="100%"
+              class="py-3"
+            />
+          </a>
+        </div>
+        {% if name == "Humidity" %}
+        <div class="col-lg-6 col-sm-3 border border-success">
+          {% else %}
+          <div class="col-lg-6 col-sm-3">
+            {% endif %}
+            <a href="/plots/humidity">
+              <img
+                src="../static/assets/images/Fig2.png"
+                alt="Fig2"
+                width="100%"
+                class="py-3"
+              />
+            </a>
+          </div>
+
+          {% if name == "Cloudiness" %}
+          <div class="col-lg-6 col-sm-3 border border-success">
+            {% else %}
+            <div class="col-lg-6 col-sm-3">
+              {% endif %}
+              <a href="/plots/cloudiness">
+                <img
+                  src="../static/assets/images/Fig3.png"
+                  alt="Fig3"
+                  width="100%"
+                  class="py-3"
+                />
+              </a>
+            </div>
+            {% if name == "Wind Speed" %}
+            <div class="col-lg-6 col-sm-3 border border-success">
+              {% else %}
+              <div class="col-lg-6 col-sm-3">
+                {% endif %}
+                <a href="/plots/wind-speed">
+                  <img
+                    src="../static/assets/images/Fig4.png"
+                    alt="Fig4"
+                    width="100%"
+                    class="py-3"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

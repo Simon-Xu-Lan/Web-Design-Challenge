@@ -1,0 +1,17 @@
+@media (max-width: 576px) {
+  h1,
+  h2,
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+
+  .small {
+    text-align: center;
+  }
+}
