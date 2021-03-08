@@ -1,12 +1,5 @@
 from flask import Flask, render_template
-import pandas as pd
 
-df = pd.read_csv("./static/assets/data/cities.csv")
-with open("./templates/table.html", 'w') as file:
-    file.write(df.to_html())
-cols = df.columns
-for row in df.head(1).iterrows():
-    print(type(row))
 
 app = Flask(__name__)
 
@@ -36,7 +29,7 @@ def comparison():
 
 @app.route("/data")
 def table():
-    return render_template("data.html", df=df)
+    return render_template("data.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
